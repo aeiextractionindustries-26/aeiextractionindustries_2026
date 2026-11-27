@@ -37,6 +37,12 @@
 
 [[redirects]]
   from = "/index"
-  to = "/index.html"
+  to = "/"
   status = 301
+
+[[redirects]]
+  from = "/index.html"
+  to = "/"
+  status = 301
+  force = true
 
