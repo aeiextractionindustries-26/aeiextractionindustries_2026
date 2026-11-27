@@ -1,5 +1,17 @@
 DirectoryIndex index.html
 
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteCond %{HTTPS} !=on [OR]
+  RewriteCond %{HTTP_HOST} ^www\.aeiextractionindustries\.com$ [NC]
+  RewriteRule ^ https://aeiextractionindustries.com%{REQUEST_URI} [R=301,L,NE]
+
+  RewriteCond %{THE_REQUEST} \s/+index\.html(?:[?\s]) [NC]
+  RewriteRule ^index\.html$ https://aeiextractionindustries.com/ [R=301,L,NE]
+</IfModule>
+
+ErrorDocument 404 /404.html
+
 <IfModule mod_deflate.c>
   AddOutputFilterByType DEFLATE text/html text/css application/javascript image/svg+xml
 </IfModule>

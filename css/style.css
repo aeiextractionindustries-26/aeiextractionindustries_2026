@@ -4,8 +4,6 @@
    Pure CSS3 | International Industrial B2B Design System
    ========================================================================== */
 
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap');
-
 :root {
   /* Strict Brand Color Palette */
   --primary-navy: #102C3A;
