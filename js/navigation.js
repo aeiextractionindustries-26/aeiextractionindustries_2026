@@ -122,20 +122,22 @@
     });
 
     // 4. Active Navigation Link Highlighting Across Multi-Page URLs
-    const currentPath = window.location.pathname.split('/').pop() || 'index.html';
+    const normalizePath = function (path) {
+      return path.replace(/\/+$/, '') || '/';
+    };
+    const currentPath = normalizePath(window.location.pathname);
     const productDetailPages = [
-      'products.html',
-      'biomass-pellets.html',
-      'soap-grade-oil.html',
-      'tannin.html',
-      'cashew-catechin.html'
+      '/products/biomass-pellets',
+      '/products/soap-grade-oil',
+      '/products/tannin',
+      '/products/cashew-catechin'
     ];
 
     const navLinks = document.querySelectorAll('.nav-link, .dropdown-link');
     navLinks.forEach(function (link) {
       const href = link.getAttribute('href');
       if (!href) return;
-      const cleanHref = href.split('#')[0].split('?')[0];
+      const cleanHref = normalizePath(new URL(href, window.location.href).pathname);
 
       if (cleanHref === currentPath) {
         link.classList.add('is-active');

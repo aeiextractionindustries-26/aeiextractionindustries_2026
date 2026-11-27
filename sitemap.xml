@@ -6,47 +6,47 @@
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://aeiextractionindustries.com/about/about.html</loc>
+    <loc>https://aeiextractionindustries.com/about/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://aeiextractionindustries.com/products/products.html</loc>
+    <loc>https://aeiextractionindustries.com/products/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://aeiextractionindustries.com/products/biomass-pellets.html</loc>
+    <loc>https://aeiextractionindustries.com/products/biomass-pellets</loc>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://aeiextractionindustries.com/products/soap-grade-oil.html</loc>
+    <loc>https://aeiextractionindustries.com/products/soap-grade-oil</loc>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://aeiextractionindustries.com/products/tannin.html</loc>
+    <loc>https://aeiextractionindustries.com/products/tannin</loc>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://aeiextractionindustries.com/products/cashew-catechin.html</loc>
+    <loc>https://aeiextractionindustries.com/products/cashew-catechin</loc>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://aeiextractionindustries.com/infrastructure/infrastructure.html</loc>
+    <loc>https://aeiextractionindustries.com/infrastructure/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://aeiextractionindustries.com/quality/quality.html</loc>
+    <loc>https://aeiextractionindustries.com/quality/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://aeiextractionindustries.com/contact/contact.html</loc>
+    <loc>https://aeiextractionindustries.com/contact/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>

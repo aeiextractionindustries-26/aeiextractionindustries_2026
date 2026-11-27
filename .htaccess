@@ -6,8 +6,31 @@ DirectoryIndex index.html
   RewriteCond %{HTTP_HOST} ^www\.aeiextractionindustries\.com$ [NC]
   RewriteRule ^ https://aeiextractionindustries.com%{REQUEST_URI} [R=301,L,NE]
 
+  RewriteCond %{THE_REQUEST} \s/+about/about\.html(?:[?\s]) [NC]
+  RewriteRule ^about/about\.html$ /about/ [R=301,L,NE]
+  RewriteCond %{THE_REQUEST} \s/+contact/contact\.html(?:[?\s]) [NC]
+  RewriteRule ^contact/contact\.html$ /contact/ [R=301,L,NE]
+  RewriteCond %{THE_REQUEST} \s/+infrastructure/infrastructure\.html(?:[?\s]) [NC]
+  RewriteRule ^infrastructure/infrastructure\.html$ /infrastructure/ [R=301,L,NE]
+  RewriteCond %{THE_REQUEST} \s/+quality/quality\.html(?:[?\s]) [NC]
+  RewriteRule ^quality/quality\.html$ /quality/ [R=301,L,NE]
+  RewriteCond %{THE_REQUEST} \s/+products/products\.html(?:[?\s]) [NC]
+  RewriteRule ^products/products\.html$ /products/ [R=301,L,NE]
+  RewriteCond %{THE_REQUEST} \s/+products/(?:biomass-pellets|cashew-catechin|soap-grade-oil|tannin)\.html(?:[?\s]) [NC]
+  RewriteRule ^products/(biomass-pellets|cashew-catechin|soap-grade-oil|tannin)\.html$ /products/$1 [R=301,L,NE]
+
   RewriteCond %{THE_REQUEST} \s/+index\.html(?:[?\s]) [NC]
   RewriteRule ^index\.html$ https://aeiextractionindustries.com/ [R=301,L,NE]
+
+  RewriteRule ^(about|contact|infrastructure|quality|products)$ /$1/ [R=301,L,NE]
+  RewriteRule ^products/(biomass-pellets|cashew-catechin|soap-grade-oil|tannin)/$ /products/$1 [R=301,L,NE]
+
+  RewriteRule ^about/?$ about/about.html [L]
+  RewriteRule ^contact/?$ contact/contact.html [L]
+  RewriteRule ^infrastructure/?$ infrastructure/infrastructure.html [L]
+  RewriteRule ^quality/?$ quality/quality.html [L]
+  RewriteRule ^products/?$ products/products.html [L]
+  RewriteRule ^products/(biomass-pellets|cashew-catechin|soap-grade-oil|tannin)$ products/$1.html [L]
 </IfModule>
 
 ErrorDocument 404 /404.html
